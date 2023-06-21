@@ -1,0 +1,107 @@
+.header__menu {
+  padding: 0;
+  margin: 0 2px 0 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.menu__element {
+  a{
+    &:hover{
+      color: #008dd2;
+    }
+  }
+}
+
+.menu__link {
+  font-size: 12px;
+  font-family: "Raleway";
+  color: #707070;
+  line-height: 1.667;
+  transition-duration: 500ms;
+  transition-property: color;
+  text-decoration: none;
+}
+
+.menu__hamburger {
+  margin-left: auto;
+  margin-left: 20px;
+  appearance: none;
+  border: none;
+  width: 40px;
+  height: 35px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__hamburger span {
+  display: block;
+  background: black;
+  height: 5px;
+  width: 30px;
+  margin: 5px 0;
+}
+
+.menu__hamburger::after, .menu__hamburger::before {
+  display: block;
+  background: black;
+  height: 5px;
+  width: 30px;
+  content: '';
+}
+
+
+@media (max-width: 1037px) {
+
+  .menu__hamburger {
+    display: block;
+  }
+
+  .menu--active .header__menu {
+    display: block;
+  }
+
+  .menu--active .menu__hamburger {
+    transform: rotate(90deg);
+    padding-top: 0;
+  }
+
+  .menu {
+    padding: 11px 0;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .menu {
+    width: 100%;
+    order: 1;
+  }
+  .header__wrap {
+    justify-content: space-between;
+  }
+  .header__logo {
+    padding-left: 13px;
+  }
+  .cart-block {
+    margin-right: 20px;
+  }
+  .navbar-toggler {
+    color: #008dd2;
+  }
+  .menu__element {
+    margin-right: 0;
+
+    &:hover {
+      border-bottom: 1px solid #008dd2;
+    }
+  }
+}
+@media (max-width: 526px) {
+  .menu__element{
+    text-align: center;
+  }
+}
+

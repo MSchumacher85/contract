@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+  url('../fonts/SourceSansPro-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-SemiBold.woff') format('woff'),
+  url('../fonts/SourceSansPro-SemiBold.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+  url('../fonts/SourceSansPro-Bold.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

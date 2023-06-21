@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contract</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="header__wrap wrap">
+            <a href="#" class="header__logo">
+                <img src="img/Logo.png">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-light menu">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu__header">
+                            <li class="nav-item menu__element">
+                                <a class="nav-link menu__link" aria-current="page" href="#">Каталог</a>
+                            </li>
+                            <li class="nav-item menu__element">
+                                <a class="nav-link menu__link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item menu__element">
+                                <a class="nav-link menu__link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item menu__element">
+                                <a class="nav-link menu__link" href="#">Партнеры</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__form">
+                <form>
+                    <input class="search" data-search-input="" autocomplete="off" type="search" name="q" value=""
+                           placeholder="Поиск">
+                    <a href="#" class="header-icon header-icon__search" data-headericonsearch="">
+                        <img src="img/icon-search.png" alt="account">
+                    </a>
+                </form>
+            </div>
+            <a href="#" class="header-icon cart-block" data-cart-widget="">
+                <img src="img/icon-cart.png" alt="cart">
+                <span class="quantity" data-cart-total-num-items="">5</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="banner__wrap wrap">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner.png" class="d-block w-100" alt="...">
+                        <div class="banner__info">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h1>
+                                <p>Моторные масла ENEOS отвечает новейшим требования </br> классификации SAE, API, ACEA,
+                                    ILSAC</p>
+                                <button class="banner__btn">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner.png" class="d-block w-100" alt="...">
+                        <div class="banner__info">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h1>
+                                <p>Моторные масла ENEOS отвечает новейшим требования </br> классификации SAE, API, ACEA,
+                                    ILSAC</p>
+                                <button class="banner__btn">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner.png" class="d-block w-100" alt="...">
+                        <div class="banner__info">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h1>
+                                <p>Моторные масла ENEOS отвечает новейшим требования </br> классификации SAE, API, ACEA,
+                                    ILSAC</p>
+                                <button class="banner__btn">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                    <span><img src="img/icon-arrow-left.png"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                    <span><img src="img/icon-arrow-right.png"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="catalog wrap">
+        <h1 class="catalog__title">Разделы каталога</h1>
+        <div class="catalog__wrap">
+            <div class="catalog__list">
+                <a href="#" class="catalog__item catalog__item--one">
+                    <figure>
+                        <img src="img/imported_oils.png" alt="Импортные масла">
+                        <figcaption>Импортные масла</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="catalog__item catalog__item--two">
+                    <figure>
+                        <img src="img/russian_oils.png" alt="Отечественные масла">
+                        <figcaption>Отечественные масла</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="catalog__item catalog__item--three">
+                    <figure>
+                        <img src="img/antifreeze.png" alt="Тосол, антифриз">
+                        <figcaption>Тосол, антифриз</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="catalog__item catalog__item--four">
+                    <figure>
+                        <img src="img/acomulators.png" alt="Аккумуляторы">
+                        <figcaption>Аккумуляторы</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="catalog__item catalog__item--five">
+                    <figure>
+                        <img src="img/paints.png" alt="Краски, эмаль">
+                        <figcaption>Краски, эмаль</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="catalog__item catalog__item--six">
+                    <figure>
+                        <img src="img/auto_chemistry.png" alt="Автохимия">
+                        <figcaption>Автохимия</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products wrap">
+        <h1 class="products__title">Популярные продукты</h1>
+        <div class="product__wrap">
+            <div class="products__list">
+                <a href="#" class="products__item products__item--one">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--two">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--three">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--four">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--five">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--six">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--seven">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="products__item products__item--eight">
+                    <figure>
+                        <img src="img/nicon.png" alt="Фотоаппарат Nicon D3400">
+                        <figcaption>Фотоаппарат Nicon D3400</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about wrap">
+        <h1 class="about__title">О компании</h1>
+        <div class="about__wrap">
+            <div class="about__info">
+                <div class="about__image">
+                    <img src="img/certificate.png" alt="Сертификат">
+                </div>
+                <div class="about__description">
+                    &nbsp; &nbsp; &nbsp; ООО «КОНТРАСТ» является официальным представителем смазочных материалов марок
+                    «TOTAL» и «ELF»
+                    (Франция), дилером масел «CHEVRON» (США), «ENEOS» (Япония) по Республике Коми и официальным
+                    поставщиком отечественных смазочных материалов «Девон», «Роснефть», «ЛУКОЙЛ» и других. Компания
+                    «КОНТРАСТ» была основана в 2005 году, изначально в качестве обособленного подразделения ООО «Масла и
+                    смазки» (г. Киров), с 2009 г. получило самостоятельную организационно-правовую форму. Сейчас ООО
+                    «КОНТРАСТ» является ведущим поставщиком смазочных материалов в регионе и зарекомендовала себя как
+                    надежный и профессиональный партнер. <a href="#">Читать дальше</a>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners wrap">
+        <h1 class="partners__title">Наши партненры</h1>
+        <div class="partners__wrap ">
+            <div class="partners__list">
+                <a href="#" class="partners__item partners__item--one">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--two">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--three">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--for">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--five">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--six">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--seven">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+                <a href="#" class="partners__item partners__item--eight">
+                    <img src="img/partner.png" alt="Лукоил">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer__wrap wrap">
+                    <div class="footer__logo">
+                        <img src="img/Logo.png">
+                    </div>
+                    <div class="footer__links_customers">
+                        <h3>Покупателям</h3>
+                        <ul>
+                            <li><a href="#">Пластичные смазки</a></li>
+                            <li><a href="#">Тосол, антифриз</a></li>
+                            <li><a href="#">Аккумуляторы</a></li>
+                            <li><a href="#">Масло</a></li>
+                            <li><a href="#">Краски, эмаль</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links_about">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Наши партнеры</a></li>
+                        </ul>
+                    </div>
+                <div class="footer__buttons">
+                    <a href="#" class="footer__call button-call recall" data-recall="">Заказать звонок</a>
+                    <a href="#" class="button-up ml38" id="button-up"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+<script src="js/main.js"></script>
+</body>
+</html>

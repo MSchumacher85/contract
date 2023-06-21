@@ -1,0 +1,80 @@
+.products__list {
+  display: grid;
+  grid-template-areas: 'products__item--one products__item--two products__item--three products__item--for'
+                       'products__item--five products__item--six products__item--seven products__item--eight';
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-gap: 40px;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.products__item {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 16px;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #fff;
+  border: 1px solid #D0D0D0;
+  padding: 20px;
+
+  figcaption {
+    text-align: center;
+    font-size: 16px;
+    color: #101010;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+@media (max-width: 960px) {
+  .products__list {
+    grid-template-areas: 'products__item--one catalog__item--two'
+                         'products__item--three catalog__item--for'
+                         'products__item--five catalog__item--six'
+                         'products__item--seven products__item--eight';
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 610px) {
+  .products__list {
+    grid-gap: 20px;
+
+    figcaption {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .products__list {
+    grid-template-areas: 'products__item--one'
+                         'products__item--two'
+                         'products__item--three'
+                         'products__item--for'
+                         'products__item--five'
+                         'products__item--six'
+                         'products__item--seven'
+                         'products__item--eight';
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}

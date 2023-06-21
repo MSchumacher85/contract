@@ -1,0 +1,25 @@
+@mixin min-max($min, $max, $p) {
+  min-width: $min;
+  max-width: $max;
+  padding: $p;
+}
+
+@mixin button($bg: #ffffff, $borderColor: transparent) {
+  color: #F04330;
+  border-radius: 36px;
+  border: 2px solid $borderColor;
+  background-color: $bg;
+  width: 220px;
+  height: 52px;
+  box-shadow: none;
+  appearance: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Raleway";
+  font-weight: bold;
+  cursor: pointer;
+  transition-property: background, border-color;
+  transition-duration: 500ms;
+  @content;
+}

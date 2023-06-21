@@ -1,0 +1,37 @@
+.about__info{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__description{
+  padding-left: 50px;
+  box-sizing: border-box;
+  flex-basis: calc(100% - 300px);
+  font-family: "Montserat";
+  font-size: 16px;
+  line-height: 150%;
+}
+.about__image{
+  flex-basis: auto;
+}
+
+@media (max-width: 760px) {
+  .about__description{
+    padding-left: 0;
+  }
+  .about__info{
+    padding: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .about__info{
+    flex-direction: column;
+  }
+  .about__image{
+    text-align: center;
+    order: 1;
+  }
+}
